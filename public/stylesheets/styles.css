@@ -265,6 +265,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  margin: 20px;
 }
 
 button,
@@ -10962,4 +10963,15 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.Covid {
+  padding: 10px;
+  margin: 10px;
+  background-color: #e8f9ff;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
 }
