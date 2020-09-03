@@ -50,6 +50,8 @@ module.exports = function(app) {
       });
     }
   });
+
+  //<!--  Mathew   -->
   // // // /// /// This is for symptoms // // // //
   app.get("/api/all", (req, res) => {
     const dbQuery = "SELECT * FROM Covid";
@@ -79,3 +81,4 @@ module.exports = function(app) {
     );
   });
 };
+//<!--  Mathew   -->

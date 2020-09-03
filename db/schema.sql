@@ -3,7 +3,7 @@ DROP DATABASE IF EXISTS passport_demo;
 -- Creates the "todolist" database --
 CREATE DATABASE passport_demo;
 
-
+--<!--  Mathew   -->
 CREATE DATABASE CovidSym;
 USE CovidSym;
 
@@ -15,3 +15,4 @@ CREATE TABLE Covid (
 
   PRIMARY KEY ( `id` ) 
 );
+--<!--  Mathew   -->
