@@ -74,7 +74,7 @@ module.exports = function(app) {
       (err, result) => {
         if (err) throw err;
         console.log("Symptom Successfully Saved!");
-        res.end();
+        res.end(result);
       }
     );
   });
