@@ -31,6 +31,15 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!-- symptom list -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.0.0/lumen/bootstrap.min.css"
+    />
+    <!-- <link rel="stylesheet" href="css/styles.css" media="screen" title="no title"> -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="stylesheets/styles.css" rel="stylesheet" />
   </head>
@@ -105,7 +114,31 @@
   <section>
     <div class="container">
       <div class="row">
-        <a>***Insert sympton tracker here!***</a>
+        <div class="col-md-6 offset-md-3">
+          <ul class="list-group symptom-list">
+            <li class="list-group-item new-item">
+              <form id="symptom-form">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-10">
+                      <input
+                        class="new-item form-control"
+                        placeholder="enter a symptom"
+                        type="text"
+                      />
+                    </div>
+                    <div class="col-2">
+                      <button type="submit" class="btn btn-success">
+                        Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </li>
+            <span class="symptom-container"> </span>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -137,4 +170,5 @@
       </div>
     </div>
   </footer>
+  <script src="js/views.js" type="text/javascript"></script>
 </html>
