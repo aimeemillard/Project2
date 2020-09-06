@@ -10,7 +10,7 @@ module.exports = function(app) {
     // Sending back a password, even a hashed password, isn't a good idea
     res.json({
       email: req.user.email,
-      id: req.user.id
+      id: req.user.id,
     });
   });
 
@@ -20,7 +20,7 @@ module.exports = function(app) {
   app.post("/api/signup", (req, res) => {
     db.User.create({
       email: req.body.email,
-      password: req.body.password
+      password: req.body.password,
     })
       .then(() => {
         res.redirect(307, "/api/login");
@@ -46,39 +46,8 @@ module.exports = function(app) {
       // Sending back a password, even a hashed password, isn't a good idea
       res.json({
         email: req.user.email,
-        id: req.user.id
+        id: req.user.id,
       });
     }
   });
-
-  //<!--  Mathew   -->
-  // // // /// /// This is for symptoms // // // //
-  app.get("/api/all", (req, res) => {
-    const dbQuery = "SELECT * FROM Covid";
-
-    connection.query(dbQuery, (err, result) => {
-      if (err) throw err;
-      res.json(result);
-    });
-  });
-
-  // Add a chirp
-  app.post("/api/new", (req, res) => {
-    console.log("Chirp Data:");
-    console.log(req.body);
-
-    const dbQuery =
-      "INSERT INTO Covid (author, body, created_at) VALUES (?,?,?)";
-
-    connection.query(
-      dbQuery,
-      [req.body.author, req.body.body, req.body.created_at],
-      (err, result) => {
-        if (err) throw err;
-        console.log("Symptom Successfully Saved!");
-        res.end(result);
-      }
-    );
-  });
 };
-//<!--  Mathew   -->

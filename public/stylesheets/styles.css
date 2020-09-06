@@ -10,6 +10,28 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+/* Item list for symptoms */
+.todo-list {
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+input.new-item:focus {
+  outline: none;
+}
+
+.list-group-item > button.delete,
+.list-group-item > button.complete {
+  float: right;
+  height: 35px;
+  margin-left: 5px;
+}
+
+.edit {
+  width: 100%;
+}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -265,7 +287,6 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  margin: 20px;
 }
 
 button,
@@ -10963,15 +10984,4 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.Covid {
-  padding: 10px;
-  margin: 10px;
-  background-color: #e8f9ff;
-}
-
-p {
-  margin: 0;
-  font-size: 16px;
 }
