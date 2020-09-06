@@ -11,6 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
+/* Item list for symptoms */
 .todo-list {
   margin: 0 auto;
   margin-top: 75px;
@@ -23,7 +24,7 @@ input.new-item:focus {
 .list-group-item > button.delete,
 .list-group-item > button.complete {
   float: right;
-  height: 25px;
+  height: 35px;
   margin-left: 5px;
 }
 

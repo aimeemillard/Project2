@@ -1,7 +1,17 @@
+/* eslint-disable no-var */
 module.exports = function(sequelize, DataTypes) {
-  const Symptom = sequelize.define("Symptom", {
-    text: DataTypes.STRING,
-    complete: DataTypes.BOOLEAN,
+  var Todo = sequelize.define("Todo", {
+    text: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [1, 140],
+      },
+    },
+    complete: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false,
+    },
   });
-  return Symptom;
+  return Todo;
 };
