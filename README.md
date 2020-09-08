@@ -9,9 +9,13 @@ Project-Covid provides clients with up to date information on covid cases. Clien
 
 # Technologies Used:
 Node and Express server
-MySQL database with a Sequelize ORM
-GET and POST routes for retrieving and adding new data
-API
+
+MySQL db with a Sequelize ORM
+
+GET & POST routes for retrieving and adding new data
+
+Covid API
+
 Heroku
 
 
@@ -22,7 +26,8 @@ Wayil-Covid Tracker API
 Mathew- database
 
 
-
+# Github repo: 
 https://github.com/aimeemillard/Project2.git
 
+# Heroku deploy: 
 https://project-covid.herokuapp.com/
