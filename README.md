@@ -20,3 +20,9 @@ Aimee-Front end(HTML, CSS), Symptom Tracker page(front end and back end)
 Sebastian-Blog page
 Wayil-Covid Tracker API
 Mathew- database
+
+
+
+https://github.com/aimeemillard/Project2.git
+
+https://project-covid.herokuapp.com/
