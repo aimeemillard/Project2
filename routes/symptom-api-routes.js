@@ -56,4 +56,9 @@ module.exports = function(app) {
         res.json(err);
       });
   });
+
+  app.get("/api/blog1", () => {
+    Console.log("blog1");
+    alert("Your responce has been saved successfully!!");
+  });
 };
