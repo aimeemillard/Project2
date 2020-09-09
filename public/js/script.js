@@ -1,3 +1,4 @@
+/* eslint-disable prefer-arrow-callback */
 
 $(document).ready(function () {
   searchCovid()
