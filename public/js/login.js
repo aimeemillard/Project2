@@ -4,6 +4,7 @@ $(document).ready(() => {
   const emailInput = $("input#email-input");
   const passwordInput = $("input#password-input");
 
+
   // When the form is submitted, we validate there's an email and password entered
   loginForm.on("submit", event => {
     event.preventDefault();
