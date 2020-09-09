@@ -31,9 +31,13 @@
       rel="stylesheet"
       type="text/css"
     />
+
+    <!-- <link rel="stylesheet" href="css/styles.css" media="screen" title="no title"> -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="stylesheets/styles.css" rel="stylesheet" />
-  
   </head>
   <body id="page-top">
     <!-- Navigation-->
@@ -42,11 +46,10 @@
         <a class="navbar-brand js-scroll-trigger" href="#page-top"
           >Project-Covid</a
         >
-
         <!-- <img src="assets/img/navbar-logo.svg" alt=""
         /></a> -->
         <button
-          class="navbar-toggler navbar-toggler-right"
+          class="nav navbar-toggler navbar-toggler-right"
           type="button"
           data-toggle="collapse"
           data-target="#navbarResponsive"
@@ -63,36 +66,32 @@
               <a class="nav-link js-scroll-trigger" href="#services"
                 >Services</a
               >
-              <!-- </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio"
-                >Portfolio</a
-              > -->
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/logout">
-                Logout
-              </a>
+              <a class="nav nav-link js-scroll-trigger" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+              <a class="nav nav-link js-scroll-trigger" href="/logout"
+                >Logout</a
+              >
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li> -->
           </ul>
         </div>
       </div>
     </nav>
+
     <!-- Masthead-->
     <header class="masthead">
       <div class="container">
         <div class="masthead-subheading">Welcome</div>
+        <div class="masthead-subheading">
+          <h2><span class="member-name"></span></h2>
+        </div>
         <div class="masthead-heading text-uppercase">
-         get the most Up-to-date information
+          get the most Up-to-date information
         </div>
         <!-- <a
           class="btn btn-primary btn-xl text-uppercase js-scroll-trigger"
@@ -101,13 +100,14 @@
         > -->
       </div>
     </header>
+
     <!-- Services-->
     <section class="page-section" id="services">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-md-offset-3">
+          <!-- <div class="col-md-6 col-md-offset-3">
             <h2><span class="member-name"></span></h2>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="container">
@@ -271,6 +271,7 @@
         </ul>
       </div>
     </section>
+
     <!-- Team-->
     <section class="page-section bg-light" id="team">
       <div class="container">
@@ -280,13 +281,12 @@
             Learn about our current team members.
           </h3>
         </div>
-
         <div class="row">
           <div class="col-lg-6">
             <div class="team-member">
               <img
                 class="mx-auto rounded-circle"
-                src="assets/img/team/team.jpg"
+                src="assets/img/team/team.png"
                 alt=""
               />
               <h4>Aimee Millard</h4>
@@ -296,9 +296,6 @@
                 href="https://github.com/aimeemillard/"
                 ><i class="fab fa-github"></i
               ></a>
-              <!-- <a class="btn btn-dark btn-social mx-2" href="#!"
-                ><i class="fab fa-facebook-f"></i
-              ></a> -->
               <a
                 class="btn btn-dark btn-social mx-2"
                 href="https://linkedin.com"
@@ -306,12 +303,11 @@
               ></a>
             </div>
           </div>
-
           <div class="col-lg-6">
             <div class="team-member">
               <img
                 class="mx-auto rounded-circle"
-                src="assets/img/team/team.jpg"
+                src="assets/img/team/team.png"
                 alt=""
               />
               <h4>Wayil Mustafa</h4>
@@ -321,9 +317,6 @@
                 href="https://github.com/waymg/"
                 ><i class="fab fa-github"></i
               ></a>
-              <!-- <a class="btn btn-dark btn-social mx-2" href="#!"
-                ><i class="fab fa-facebook-f"></i
-              ></a> -->
               <a
                 class="btn btn-dark btn-social mx-2"
                 href="https://linkedin.com"
@@ -332,13 +325,12 @@
             </div>
           </div>
         </div>
-
         <div class="row">
           <div class="col-lg-6">
             <div class="team-member">
               <img
                 class="mx-auto rounded-circle"
-                src="assets/img/team/team3.jpg"
+                src="assets/img/team/team.png"
                 alt=""
               />
               <h4>Sebastian Lopez</h4>
@@ -348,9 +340,6 @@
                 href="https://github.com/johnslopez"
                 ><i class="fab fa-github"></i
               ></a>
-              <!-- <a class="btn btn-dark btn-social mx-2" href="#!"
-                ><i class="fab fa-facebook-f"></i
-              ></a> -->
               <a
                 class="btn btn-dark btn-social mx-2"
                 href="https://linkedin.com"
@@ -358,12 +347,11 @@
               ></a>
             </div>
           </div>
-
           <div class="col-lg-6">
             <div class="team-member">
               <img
                 class="mx-auto rounded-circle"
-                src="assets/img/team/team4.jpg"
+                src="assets/img/team/team.png"
                 alt=""
               />
               <h4>Mathew Poovathany</h4>
@@ -373,9 +361,6 @@
                 href="https://github.com/mathewpoovathany/"
                 ><i class="fab fa-github"></i
               ></a>
-              <!-- <a class="btn btn-dark btn-social mx-2" href="#!"
-                ><i class="fab fa-facebook-f"></i
-              ></a> -->
               <a
                 class="btn btn-dark btn-social mx-2"
                 href="https://linkedin.com"
@@ -384,16 +369,6 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-              eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam
-              corporis ea, alias ut unde.
-            </p>
-          </div>
-        </div> -->
       </div>
     </section>
 
@@ -402,7 +377,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-6 my-3">
-            <a href="#!"
+            <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html"
               ><img
                 class="img-fluid d-block mx-auto"
                 src="assets/img/logos/cdcLogo.jpg"
@@ -410,7 +385,8 @@
             /></a>
           </div>
           <div class="col-md-3 col-sm-6 my-3">
-            <a href="#!"
+            <a
+              href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
               ><img
                 class="img-fluid d-block mx-auto"
                 src="assets/img/logos/whoLogo.png"
@@ -418,7 +394,7 @@
             /></a>
           </div>
           <div class="col-md-3 col-sm-6 my-3">
-            <a href="#!"
+            <a href="https://www.ynhhs.org/patient-care/covid-19.aspx"
               ><img
                 class="img-fluid d-block mx-auto"
                 src="assets/img/logos/yaleLogo.png"
@@ -426,7 +402,7 @@
             /></a>
           </div>
           <div class="col-md-3 col-sm-6 my-3">
-            <a href="#!"
+            <a href="https://portal.ct.gov/Coronavirus"
               ><img
                 class="img-fluid d-block mx-auto"
                 src="assets/img/logos/dphLogo.jpeg"
@@ -436,6 +412,7 @@
         </div>
       </div>
     </div>
+
     <!-- Footer-->
     <footer class="footer py-4">
       <div class="container">
@@ -445,21 +422,9 @@
             <a class="btn btn-dark btn-social mx-2" href="https://github.com"
               ><i class="fab fa-github"></i
             ></a>
-            <!-- <a class="btn btn-dark btn-social mx-2" href="#!"
-              ><i class="fab fa-facebook-f"></i
-            ></a> -->
             <a class="btn btn-dark btn-social mx-2" href="https://linkedin.com"
               ><i class="fab fa-linkedin-in"></i
             ></a>
-            <nav class="navbar navbar-default">
-              <div class="container-fluid">
-                <div class="navbar-header">
-                  <a class="navbar-brand" href="/logout">
-                    Logout
-                  </a>
-                </div>
-              </div>
-            </nav>
           </div>
           <div class="col-lg-4 text-lg-right">
             <a
@@ -475,6 +440,7 @@
         </div>
       </div>
     </footer>
+
     <!-- log in-->
     <script type="text/javascript" src="js/members.js"></script>
     <!-- Bootstrap core JS-->
@@ -484,7 +450,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- Contact form JS-->
     <script src="assets/mail/jqBootstrapValidation.js"></script>
-    <script src="assets/mail/contact_me.js"></script>
+    <!-- <script src="assets/mail/contact_me.js"></script> -->
     <!-- Core theme JS-->
     <!-- <script src="js/scripts.js"></script> -->
   </body>
