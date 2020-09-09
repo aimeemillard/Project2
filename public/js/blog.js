@@ -4,8 +4,8 @@
 $("#blog-submit").on("click", event => {
   event.preventDefault();
 
-  // Make a newChirp object
-  const newChirp = {
+  // Make a newPost object
+  const newPost = {
     author: $("#author")
       .val()
       .trim(),
@@ -15,19 +15,19 @@ $("#blog-submit").on("click", event => {
     created_at: moment().format("YYYY-MM-DD HH:mm:ss")
   };
 
-  console.log(newChirp);
+  console.log(newPost);
 
   // Send an AJAX POST-request with jQuery
-  $.post("/api/new", newChirp)
+  $.post("/api/new", newPost)
     // On success, run the following code
     .then(() => {
       const row = $("<div>");
-      row.addClass("chirp");
+      row.addClass("post");
 
-      row.append("<p>" + newChirp.author + " chirped: </p>");
-      row.append("<p>" + newChirp.body + "</p>");
+      row.append("<p>" + newPost.author + " Posted: </p>");
+      row.append("<p>" + newPost.body + "</p>");
       row.append(
-        "<p>At " + moment(newChirp.created_at).format("h:mma on dddd") + "</p>"
+        "<p>At " + moment(newPost.created_at).format("h:mma on dddd") + "</p>"
       );
 
       $("#blog-area").prepend(row);
@@ -38,14 +38,14 @@ $("#blog-submit").on("click", event => {
   $("#blog-box").val("");
 });
 
-// When the page loads, grab all of our chirps
+// When the page loads, grab all of our Posts
 $.get("/api/all", data => {
   if (data.length !== 0) {
     for (let i = 0; i < data.length; i++) {
       const row = $("<div>");
       row.addClass("blog");
 
-      row.append("<p>" + data[i].author + " chirped.. </p>");
+      row.append("<p>" + data[i].author + " Posted.. </p>");
       row.append("<p>" + data[i].body + "</p>");
       row.append(
         "<p>At " + moment(data[i].created_at).format("h:mma on dddd") + "</p>"
